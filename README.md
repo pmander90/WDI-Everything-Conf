@@ -39,7 +39,7 @@
 - This does not get automatically added to new enviroments and installations
 
 
-###Option: Symlinks
+###Create Symlinks
 
 - Symlinks are shortcuts to the actual file.
 - Using the above example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
