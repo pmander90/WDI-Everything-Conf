@@ -23,7 +23,7 @@ brew install ${binaries[@]}
 
 #set up github stuff
 git config --global user.name  "theeltahir"
-git config --global user.email "theeltahir@gmail.com"
+git config --global user.email "theeltahir@eltahir.eltahir"
 git config --global color.ui always
 git config --global color.branch.current   "green reverse"
 git config --global color.branch.local     green
