@@ -90,7 +90,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 - https://github.com/thoughtbot/dotfiles
 
 ### Great Resources
--https://github.com/mathiasbynens/dotfiles
+- https://github.com/mathiasbynens/dotfiles
 - Awesome: https://github.com/sindresorhus/awesome
 - This is a big list of EVERYTHING, can be overwhelming. Focus on an area of interest.
 - Awesome Dev Env: https://github.com/jondot/awesome-devenv
