@@ -37,6 +37,8 @@
 - Using the source command, you can load external files into your terminal enviroment
 - This requires the user to keep track of their changes in the correct files (Good habbit)
 - This does not get automatically added to new enviroments and installations
+
+
 ###Option: Symlinks
 
 - Symlinks are shortcuts to the actual file.
