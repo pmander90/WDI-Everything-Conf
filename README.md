@@ -53,29 +53,47 @@ ln -s ~/dotfiles/ST3/Installed\ Packages Installed\ Packages
 ```
 
 
-  -- Symlinks are shortcuts to the actual file.
-  -- Using the above example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
-  -- Changes are automatically included to the git repo and can be pushed to github and propogated to other machines
-  -- Careful of private data, space constraints
+- Symlinks are shortcuts to the actual file.
+- Using the above example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
+- Changes are automatically included to the git repo and can be pushed to github and propogated to other machines
+- Careful of private data, space constraints
 
 ##Setup Scripts
 - Use shell scripts to automate the process of setting up your enviroment
 - Homebrew is the 'gem install' or 'NPM Install' for mac osx applications
+- `brew install node`  or `brew install postgresql` or `brew install mongo`
 - Use the 'defaults write' commands in shell scripts to edit system settings.
-  -- This can change anything from dock settings to screenshot locations to keyboard settings.
-  -- These commands are powerful, be careful copying commands form the internet
+```
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+```
+
+- This can change anything from dock settings to screenshot locations to keyboard settings.
+- These commands are powerful, be careful copying commands form the internet
 
 ##Resources Around the Web
 - Google dotfiles
   -- Users generally post their dotfiles on GitHub
+  -- People love to show off, so there is most likely a blog post associated with their set up instructions
+
   -- Everyone has their own style and methods, use the power of open source to share and learn new techniques
+
 - GitHub Repos:
   -- Thoughtbot https://github.com/thoughtbot/laptop
+
   -- https://github.com/thoughtbot/dotfiles
+
   -- OS X Hacker's Script: https://gist.github.com/brandonb927/3195465
+
   --- This is a great script for preconfiguring OS X.  It prompts every settings change.  Study this script and make your own.
+
   -- https://github.com/mathiasbynens/dotfiles
+
   -- Awesome: https://github.com/sindresorhus/awesome
+
   --- This is a big list of EVERYTHING, can be overwhelming. Focus on an area of interest.
+
   -- Awesome Dev Env: https://github.com/jondot/awesome-devenv
 
