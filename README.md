@@ -31,12 +31,17 @@
 
 ##Git ini... not so fast!
 - Dotfiles are spread out, how do you keep track of all them?  dont git init your home directory
-- Option: specify a source file in bash profile
+###Specify a source file in bash profile
 `source ~/dotfiles/scripts/alias`
-  -- Using the source command, you can load external files into your terminal enviroment
-  -- This requires the user to keep track of their changes in the correct files (Good habbit)
-  -- This does not get automatically added to new enviroments and installations
-- Option: Symlinks
+- Using the source command, you can load external files into your terminal enviroment
+- This requires the user to keep track of their changes in the correct files (Good habbit)
+- This does not get automatically added to new enviroments and installations
+###Option: Symlinks
+
+- Symlinks are shortcuts to the actual file.
+- Using the above example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
+- Changes are automatically included to the git repo and can be pushed to github and propogated to other machines
+- Careful of private data, space constraints
 
 ```
 # Make your backup Folder.
@@ -51,12 +56,6 @@ mv Installed\ Packages/ ~/dotfiles/ST3/
 ln -s ~/dotfiles/ST3/Packages/ Packages
 ln -s ~/dotfiles/ST3/Installed\ Packages Installed\ Packages
 ```
-
-
-- Symlinks are shortcuts to the actual file.
-- Using the above example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
-- Changes are automatically included to the git repo and can be pushed to github and propogated to other machines
-- Careful of private data, space constraints
 
 ##Setup Scripts
 - Use shell scripts to automate the process of setting up your enviroment
@@ -74,26 +73,19 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 - These commands are powerful, be careful copying commands form the internet
 
 ##Resources Around the Web
-- Google dotfiles
-  -- Users generally post their dotfiles on GitHub
-  -- People love to show off, so there is most likely a blog post associated with their set up instructions
-
-  -- Everyone has their own style and methods, use the power of open source to share and learn new techniques
-
-- GitHub Repos:
-  -- Thoughtbot https://github.com/thoughtbot/laptop
-
-  -- https://github.com/thoughtbot/dotfiles
-
-  -- OS X Hacker's Script: https://gist.github.com/brandonb927/3195465
-
-  --- This is a great script for preconfiguring OS X.  It prompts every settings change.  Study this script and make your own.
-
-  -- https://github.com/mathiasbynens/dotfiles
-
-  -- Awesome: https://github.com/sindresorhus/awesome
-
-  --- This is a big list of EVERYTHING, can be overwhelming. Focus on an area of interest.
-
-  -- Awesome Dev Env: https://github.com/jondot/awesome-devenv
+###Google dotfiles
+- Users generally post their dotfiles on GitHub
+- People love to show off, so there is most likely a blog post associated with their set up instructions
+- Everyone has their own style and methods, use the power of open source to share and learn new techniques
+### Thoughtbot Repos:
+- Thoughtbot https://github.com/thoughtbot/laptop
+- https://github.com/thoughtbot/dotfiles
+### OS X for hackers script
+- https://gist.github.com/brandonb927/3195465
+- This is a great script for preconfiguring OS X.  It prompts every settings change.  Study this script and make your own.
+### Great Resources
+-https://github.com/mathiasbynens/dotfiles
+- Awesome: https://github.com/sindresorhus/awesome
+- This is a big list of EVERYTHING, can be overwhelming. Focus on an area of interest.
+- Awesome Dev Env: https://github.com/jondot/awesome-devenv
 
