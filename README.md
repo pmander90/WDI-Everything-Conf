@@ -18,33 +18,42 @@
 - How much downtime do you expect if you needed to reinstall your OS? replace your laptop? get a new laptop for work?
 
 ##Strategies for Backing up
-- Make copies on external drives
-  -- How do you keep track of your changes to enviroments
-  -- Maintaining and keeping track of physical media is not convinient
-- Cloud Storage options: Google Drive, Dropbox, iCloud... etc
-  -- Data automatically sync and backups are created
-  -- Does not keep track of changes over time.
-- Version Control: GitHub
-  -- Allows user to track changes using the power of Git
-  -- Users in the community share their dotfiles which allows for collaboration and sharing of best practices
-  -- Gives visitors a sense of personality (Favorite OS, text editors, scripts, program languages)
+####Make copies on external drives
+- Unlimited privacy and space
+- No additional software needed (outside of backup software)
+- How do you keep track of your changes to enviroments?
+- Maintaining and keeping track of physical media is not convinient
+
+####Cloud Storage options: Google Drive, Dropbox, iCloud... etc
+- Data automatically sync and backups are created
+- Great for private and large files.
+- Does not promote the open source style of information sharing.
+- Requires propietary clients
+
+####Version Control: GitHub
+- Allows user to track changes using the power of Git
+- Users in the community share their dotfiles which allows for collaboration and sharing of best practices
+- Gives visitors a sense of personality (Favorite OS, text editors, scripts, program languages)
+- Built into the command line, great for scripting and automatation.
+
 
 ##Git ini... not so fast!
 - Dotfiles are spread out, how do you keep track of all them?  dont git init your home directory
 
-###Specify a source file in bash profile
+####Specify a source file in bash profile
 `source ~/dotfiles/scripts/alias`
-- Using the source command, you can load external files into your terminal enviroment
-- This requires the user to keep track of their changes in the correct files (Good habbit)
+- Using the source command, you can load external files into your terminal session
+- This requires the user to keep track of their changes in the correct files (Good habbit, seperation of concerns)
 - This does not get automatically added to new enviroments and installations
+  - bootstrap scripts will add these to your default bash_profile
 
 
-###Create Symlinks
+####Create Symlinks
 
 - Symlinks are shortcuts to the actual file.
-- Using the above example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
-- Changes are automatically included to the git repo and can be pushed to github and propogated to other machines
-- Careful of private data, space constraints
+- Using the below example, any changes done to SublimeText packages are propogated to the dotfiles directory instead
+- Changes are automatically backed up to Git or the 'cloud'
+- Careful of private data, space constraints. (consider dropbox over git)
 
 ```
 # Make your backup Folder.
@@ -60,11 +69,19 @@ ln -s ~/dotfiles/ST3/Packages/ Packages
 ln -s ~/dotfiles/ST3/Installed\ Packages Installed\ Packages
 ```
 
+- Mackup is a utilility that automates this process: https://github.com/lra/mackup
+
 ##Setup Scripts
 - Use shell scripts to automate the process of setting up your enviroment
+
+#### Brew install
 - Homebrew is the 'gem install' or 'NPM Install' for mac osx applications
-- `brew install node`  or `brew install postgresql` or `brew install mongo`
-- Use the 'defaults write' commands in shell scripts to edit system settings.
+- `brew install node`
+- `brew install postgresql`
+- `brew install mongo`
+
+#### OSX defaults write
+- Use the 'defaults write' commands in scripts to edit system settings.
 ```
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -76,22 +93,23 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 - These commands are powerful, be careful copying commands form the internet
 
 ##Resources Around the Web
-###Google dotfiles
+####Google dotfiles
 - Users generally post their dotfiles on GitHub
 - People love to show off, so there is most likely a blog post associated with their set up instructions
 - Everyone has their own style and methods, use the power of open source to share and learn new techniques
 
-### OS X for hackers script
+#### OS X for hackers script
 - https://gist.github.com/brandonb927/3195465
 - This is a great script for preconfiguring OS X.  It prompts every settings change.  Study this script and make your own.
 
-### Thoughtbot Repos:
+#### Thoughtbot Repos:
 - Thoughtbot https://github.com/thoughtbot/laptop
 - https://github.com/thoughtbot/dotfiles
 
-### Great Resources
+#### Great Resources
 - https://github.com/mathiasbynens/dotfiles
 - Awesome: https://github.com/sindresorhus/awesome
 - This is a big list of EVERYTHING, can be overwhelming. Focus on an area of interest.
+- Awesome Dotfiles: https://github.com/webpro/awesome-dotfiles
 - Awesome Dev Env: https://github.com/jondot/awesome-devenv
 
