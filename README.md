@@ -31,6 +31,7 @@
 
 ##Git ini... not so fast!
 - Dotfiles are spread out, how do you keep track of all them?  dont git init your home directory
+
 ###Specify a source file in bash profile
 `source ~/dotfiles/scripts/alias`
 - Using the source command, you can load external files into your terminal enviroment
