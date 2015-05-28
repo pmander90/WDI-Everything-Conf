@@ -1,0 +1,7 @@
+
+alias psql="'/Applications/Postgres.app/Contents/Versions/9.4/bin'/psql -p5432"
+alias be="bundle exec ruby"
+alias gl='git log --all --decorate --graph --pretty=format:"%C(yellow)%h%Creset %C(auto)%d%Creset %Cblue%ar%Creset %Cred%an%Creset %n%w(72,1,2)%s"'
+alias glive='sh ~/dotfiles/scripts/git-loglive'
+alias smongo='mongod --config /usr/local/etc/mongod.conf'
+alias lt='ls -AlFp'

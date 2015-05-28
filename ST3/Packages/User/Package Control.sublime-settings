@@ -1,0 +1,41 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Clipboard Manager",
+		"Color Scheme - Frontend Delight",
+		"ColorPicker",
+		"Colorsublime",
+		"Darkula Color Scheme",
+		"Dracula Color Scheme",
+		"Emmet",
+		"ERB Snippets",
+		"GitGutter",
+		"Handlebars",
+		"HTMLBeautify",
+		"JsFormat",
+		"JSON Reindent",
+		"KeyboardSpellCheck",
+		"Markdown Preview",
+		"Package Control",
+		"Predawn",
+		"Pretty JSON",
+		"Rails Developer Snippets",
+		"RailsCasts Colour Scheme",
+		"Railscasts Extended",
+		"RSpec",
+		"Ruby Slim",
+		"SCSS",
+		"SCSS Expander",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Terminal",
+		"Theme - Cobalt2",
+		"Theme - Cola",
+		"Theme - Soda SolarizedDark",
+		"Vintageous"
+	]
+}
