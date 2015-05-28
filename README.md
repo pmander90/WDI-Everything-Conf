@@ -77,12 +77,15 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 - Users generally post their dotfiles on GitHub
 - People love to show off, so there is most likely a blog post associated with their set up instructions
 - Everyone has their own style and methods, use the power of open source to share and learn new techniques
-### Thoughtbot Repos:
-- Thoughtbot https://github.com/thoughtbot/laptop
-- https://github.com/thoughtbot/dotfiles
+
 ### OS X for hackers script
 - https://gist.github.com/brandonb927/3195465
 - This is a great script for preconfiguring OS X.  It prompts every settings change.  Study this script and make your own.
+
+### Thoughtbot Repos:
+- Thoughtbot https://github.com/thoughtbot/laptop
+- https://github.com/thoughtbot/dotfiles
+
 ### Great Resources
 -https://github.com/mathiasbynens/dotfiles
 - Awesome: https://github.com/sindresorhus/awesome
